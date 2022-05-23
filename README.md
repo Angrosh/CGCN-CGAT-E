@@ -1,10 +1,7 @@
 # CGCN-CGAT-E
-Combining Contextualised Graph Convolution Network and Graph Attention Network with Edge Features for Relation Extraction
-
-CGCN-CGATE for SemEval Task 8 2010 Dataset
-==========
-  
-## Preparation
+Combining Contextualised Graph Convolution Network and Graph Attention Network with Edge Features for Relation Extraction - Semeval 2010 Task 8 Dataset.
+ 
+# Preparation
 We have already put the JSON files under the directory `dataset/semeval`.
   
 First, download and unzip GloVe vectors:
@@ -16,7 +13,7 @@ python3 prepare_vocab.py dataset/semeval dataset/vocab --glove_dir dataset/glove
 ```
 This will write vocabulary and word vectors as a numpy matrix into the dir `dataset/vocab`.
 
-## Training
+# Training
   
 To train the CGCN-CGATE model, run:
 
@@ -28,7 +25,7 @@ Model checkpoints and logs will be saved to: `./saved_models/01`.
 
 Please refer to `train.py` for details of parameters.
 
-## Evaluation
+# Evaluation
 
 Output model under the dir saved_models/01. To run evaluation on the test set, run:
 
