@@ -1,7 +1,7 @@
 # CGCN-CGAT-E
 Combining Contextualised Graph Convolution Network and Graph Attention Network with Edge Features for Relation Extraction 
 
-1. Semeval 2010 Task 8 Dataset.
+**Semeval 2010 Task 8 Dataset**
  
 **Preparation**:
 
