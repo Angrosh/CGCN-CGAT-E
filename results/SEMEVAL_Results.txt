@@ -1,0 +1,71 @@
+Loading model from saved_models/01/checkpoint_epoch_140.pt
+Finetune all embeddings.
+Vocab size 20986 loaded from file
+Loading data from dataset/semeval/test.json with batch size 50...
+55 batches created for dataset/semeval/test.json
+
+Running with the following configs:
+	data_dir : dataset/semeval
+	vocab_dir : dataset/vocab
+	emb_dim : 300
+	pos_dim : 30
+	hidden_dim : 360
+	num_layers : 2
+	input_dropout : 0.5
+	gcn_dropout : 0.3
+	cnn_dropout : 0.5
+	word_dropout : 0.04
+	topn : 10000000000.0
+	lower : False
+	heads : 3
+	sublayer_first : 2
+	sublayer_second : 4
+	conv_l2 : 0
+	pooling : max
+	pooling_l2 : 0.002
+	mlp_layers : 1
+	no_adj : False
+	rnn : True
+	rnn_hidden : 300
+	rnn_layers : 1
+	rnn_dropout : 0.5
+	lr : 0.5
+	lr_decay : 0.9
+	decay_epoch : 6
+	optim : sgd
+	num_epoch : 150
+	batch_size : 50
+	max_grad_norm : 5.0
+	log_step : 20
+	log : logs.txt
+	save_epoch : 100
+	save_dir : ./saved_models
+	id : 1_bert_data
+	info : 
+	seed : 1
+	cuda : True
+	cpu : False
+	load : False
+	model_file : None
+	num_class : 10
+	vocab_size : 20986
+	model_save_dir : ./saved_models/1_bert_data
+
+
+Per-relation statistics:
+Cause-Effect        P:  92.64%  R:  92.07%  F1:  92.35%  #: 328
+Component-Whole     P:  87.54%  R:  85.58%  F1:  86.55%  #: 312
+Content-Container   P:  84.06%  R:  90.62%  F1:  87.22%  #: 192
+Entity-Destination  P:  92.52%  R:  93.15%  F1:  92.83%  #: 292
+Entity-Origin       P:  88.98%  R:  87.60%  F1:  88.28%  #: 258
+Instrument-Agency   P:  81.51%  R:  76.28%  F1:  78.81%  #: 156
+Member-Collection   P:  83.79%  R:  90.99%  F1:  87.24%  #: 233
+Message-Topic       P:  83.67%  R:  94.25%  F1:  88.65%  #: 261
+Product-Producer    P:  88.05%  R:  86.15%  F1:  87.09%  #: 231
+
+Final Score:
+Precision (macro): 86.973%
+   Recall (macro): 88.521%
+       F1 (macro): 87.740%
+test set evaluate result: 0.87	0.89	0.88
+Evaluation ended.
