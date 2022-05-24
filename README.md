@@ -1,11 +1,9 @@
 # CGCN-CGAT-E
 Combining Contextualised Graph Convolution Network and Graph Attention Network with Edge Features for Relation Extraction 
 
-**Semeval 2010 Task 8 Dataset**
- 
 **Preparation**:
 
-We have already put the JSON files under the directory `dataset/semeval`.
+Semeval 2010 Task 8 dataset files are available in the directory `dataset/semeval`.
 Download and unzip GloVe vectors into directory: dataset. Then prepare vocabulary and initial word vectors with:
 ```
 python3 prepare_vocab.py dataset/semeval dataset/vocab --glove_dir dataset/glove
